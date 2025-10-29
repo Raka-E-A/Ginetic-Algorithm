@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Halaman 3</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="page">
+  <div class="page-content">
+    <h1>Ini Halaman 3</h1>
+    <p>Contoh isi konten halaman pertama SoftKomp.</p>
+
+    <a href="{{ url_for('index') }}" class="animated-button">
+      <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 12l8-8v16z"></path>
+      </svg>
+      <span class="text">Kembali ke Index</span>
+      <span class="circle"></span>
+      <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 12l8-8v16z"></path>
+      </svg>
+    </a>
+  </div>
+</body>
+</html>

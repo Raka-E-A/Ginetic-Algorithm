@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoftKomp | Index</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="hero">
+
+  <!-- <img src=static/essex.png alt="Logo" class="rotating-img"> -->
+
+  <div class="overlay"></div>
+
+  <div class="content">
+    <h1>Selamat Datang di <span>SoftKomp</span></h1>
+    <p>Pilih halaman yang ingin kamu kunjungi:</p>
+
+    <div class="buttons">
+      <a href="{{ url_for('halaman1') }}" class="animated-button">
+        <svg viewBox="0 0 24 24" class="arr-2"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"/></svg>
+        <span class="text">Halaman 1</span><span class="circle"></span>
+        <svg viewBox="0 0 24 24" class="arr-1"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"/></svg>
+      </a>
+
+      <a href="{{ url_for('halaman2') }}" class="animated-button">
+        <svg viewBox="0 0 24 24" class="arr-2"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"/></svg>
+        <span class="text">Halaman 2</span><span class="circle"></span>
+        <svg viewBox="0 0 24 24" class="arr-1"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"/></svg>
+      </a>
+
+      <a href="{{ url_for('halaman3') }}" class="animated-button">
+        <svg viewBox="0 0 24 24" class="arr-2"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"/></svg>
+        <span class="text">Halaman 3</span><span class="circle"></span>
+        <svg viewBox="0 0 24 24" class="arr-1"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"/></svg>
+      </a>
+
+      <a href="{{ url_for('halaman4') }}" class="animated-button">
+        <svg viewBox="0 0 24 24" class="arr-2"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"/></svg>
+        <span class="text">Halaman 4</span><span class="circle"></span>
+        <svg viewBox="0 0 24 24" class="arr-1"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <section class="info-section">
+    <div class="info-container">
+      <h2>Apa itu Soft Computing?</h2>
+      <p>
+        <b>Soft Computing</b> adalah pendekatan dalam kecerdasan buatan (AI) yang meniru cara berpikir manusia
+        untuk menyelesaikan masalah kompleks, tidak pasti, dan samar. Tidak seperti <i>Hard Computing</i> yang
+        memerlukan logika pasti, Soft Computing menerima ketidakpastian dan menghasilkan solusi yang fleksibel.
+      </p>
+
+      <h3>Komponen Utama:</h3>
+      <ul>
+        <li>🤖 <b>Neural Networks</b> – meniru sistem saraf otak manusia.</li>
+        <li>🧠 <b>Fuzzy Logic</b> – menangani kebenaran yang tidak hanya “benar” atau “salah”.</li>
+        <li>🧬 <b>Genetic Algorithms</b> – menggunakan prinsip evolusi untuk mencari solusi optimal.</li>
+        <li>🐝 <b>Swarm Intelligence</b> – meniru perilaku kolektif seperti semut dan burung.</li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>
