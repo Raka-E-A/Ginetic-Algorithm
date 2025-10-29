@@ -2,24 +2,75 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <title>Halaman 1</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoftKomp | Halaman 1</title>
 </head>
-<body class="page">
-  <div class="page-content">
-    <h1>Ini Halaman 1</h1>
-    <p>Contoh isi konten halaman pertama SoftKomp.</p>
+<body>
 
-    <a href="{{ url_for('index') }}" class="animated-button">
-      <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 12l8-8v16z"></path>
-      </svg>
-      <span class="text">Kembali ke Index</span>
-      <span class="circle"></span>
-      <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 12l8-8v16z"></path>
-      </svg>
-    </a>
+  <!-- Gambar berputar di pojok -->
+  <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="rotating-img">
+
+  <!-- Kotak utama -->
+  <div class="box">
+    <h1>Soft Computing</h1>
+    <p><strong>Soft Computing</strong> adalah pendekatan komputasi yang meniru cara berpikir manusia yang toleran terhadap ketidakpastian, ketidaktepatan, dan ambiguitas. 
+    Berbeda dengan komputasi keras (hard computing) yang mengandalkan logika biner dan perhitungan presisi tinggi, soft computing lebih fleksibel, adaptif, dan efisien untuk masalah kompleks dunia nyata.</p>
+
+    <hr>
+
+    <h2>1. Algoritma Fuzzy Logic</h2>
+    <p><strong>Pengertian:</strong> Fuzzy Logic adalah metode logika yang meniru cara berpikir manusia dengan menangani nilai kebenaran yang tidak hanya “benar” atau “salah”, melainkan memiliki derajat kebenaran antara 0 hingga 1.</p>
+    <p><strong>Kelebihan:</strong></p>
+    <ul>
+      <li>Mampu menangani data yang samar dan tidak pasti.</li>
+      <li>Mudah diimplementasikan untuk sistem pengambilan keputusan.</li>
+      <li>Dapat dikombinasikan dengan metode lain seperti jaringan syaraf tiruan.</li>
+    </ul>
+    <p><strong>Kekurangan:</strong></p>
+    <ul>
+      <li>Perancangan aturan fuzzy memerlukan keahlian dan waktu yang cukup lama.</li>
+      <li>Tidak cocok untuk perhitungan matematis yang membutuhkan akurasi tinggi.</li>
+    </ul>
+
+    <hr>
+
+    <h2>2. Jaringan Syaraf Tiruan (JST)</h2>
+    <p><strong>Pengertian:</strong> JST adalah model komputasi yang terinspirasi oleh cara kerja otak manusia, terdiri dari neuron-neuron buatan yang saling terhubung untuk memproses dan mengenali pola dari data.</p>
+    <p><strong>Kelebihan:</strong></p>
+    <ul>
+      <li>Mampu belajar dari data dan memperbaiki hasil seiring waktu.</li>
+      <li>Efektif untuk pengenalan pola, klasifikasi, dan prediksi.</li>
+      <li>Dapat digunakan pada berbagai bidang seperti kesehatan, finansial, dan pengolahan citra.</li>
+    </ul>
+    <p><strong>Kekurangan:</strong></p>
+    <ul>
+      <li>Memerlukan data dalam jumlah besar untuk pelatihan yang akurat.</li>
+      <li>Proses pelatihan bisa memakan waktu lama dan sumber daya tinggi.</li>
+      <li>Sulit dijelaskan bagaimana keputusan dihasilkan (black-box).</li>
+    </ul>
+
+    <hr>
+
+    <h2>3. Algoritma Genetika</h2>
+    <p><strong>Pengertian:</strong> Algoritma Genetika adalah metode optimasi yang terinspirasi dari proses evolusi biologis seperti seleksi alam, mutasi, dan crossover untuk mencari solusi terbaik dari permasalahan kompleks.</p>
+    <p><strong>Kelebihan:</strong></p>
+    <ul>
+      <li>Mampu menemukan solusi mendekati optimal pada masalah yang kompleks.</li>
+      <li>Tidak mudah terjebak pada solusi lokal.</li>
+      <li>Dapat digunakan pada berbagai macam jenis masalah optimasi.</li>
+    </ul>
+    <p><strong>Kekurangan:</strong></p>
+    <ul>
+      <li>Waktu komputasi bisa lama terutama untuk populasi besar.</li>
+      <li>Parameter seperti laju mutasi dan crossover perlu penyesuaian yang tepat.</li>
+      <li>Tidak menjamin hasil solusi terbaik mutlak.</li>
+    </ul>
   </div>
+
+  <!-- Tombol navigasi kembali -->
+  <div class="nav">
+    <a href="{{ url_for('index') }}">Kembali ke Halaman Utama</a>
+  </div>
+
 </body>
 </html>
